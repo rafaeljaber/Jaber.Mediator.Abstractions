@@ -6,7 +6,7 @@
         <Nullable>enable</Nullable>
         
         <PackageId>Jaber.Mediator.Abstractions</PackageId>
-        <Version>0.0.3</Version>
+        <Version>0.0.4</Version>
         <License>MIT</License>
         <Authors>Rafael Jáber</Authors>
         <Company>Jáber</Company>
@@ -19,5 +19,10 @@
         <Title>Mediator.Abstractions</Title>
         <Summary>Abstractions for Mediator pattern implementation</Summary>
         <RootNamespace>Mediator.Abstractions</RootNamespace>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
 </Project>
