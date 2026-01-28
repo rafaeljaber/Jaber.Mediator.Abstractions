@@ -5,7 +5,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         
-        <PackageId>Mediator.Abstractions</PackageId>
+        <PackageId>Jaber.Mediator.Abstractions</PackageId>
         <Version>0.0.1</Version>
         <License>MIT</License>
         <Authors>Rafael Jáber</Authors>
@@ -18,5 +18,6 @@
         <PackageTags>Mediator;Design Pattern;Dommain;DDD;</PackageTags>
         <Title>Mediator.Abstractions</Title>
         <Summary>Abstractions for Mediator pattern implementation</Summary>
+        <RootNamespace>Mediator.Abstractions</RootNamespace>
     </PropertyGroup>
 </Project>

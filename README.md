@@ -1,7 +1,6 @@
 # Mediator
 
-[![NuGet Mediator](https://img.shields.io/nuget/v/Mediator?label=Mediator&logo=nuget)](https://www.nuget.org/packages/Mediator/)
-[![NuGet Mediator.Abstractions](https://img.shields.io/nuget/v/Mediator.Abstractions?label=Mediator.Abstractions&logo=nuget)](https://www.nuget.org/packages/Mediator.Abstractions/)
+[![NuGet Jaber.Mediator.Abstractions](https://img.shields.io/nuget/v/Mediator.Abstractions?label=Mediator.Abstractions&logo=nuget)](https://www.nuget.org/packages/Jaber.Mediator.Abstractions/)
 [![NuGet Downloads](https://img.shields.io/nuget/dt/Mediator?label=Downloads&logo=nuget)](https://www.nuget.org/packages/Mediator/)
 [![Last Commit](https://img.shields.io/github/last-commit/rafaeljaber/Mediator?label=last%20commit&logo=github)](https://github.com/rafaeljaber/Mediator)
 [![.NET](https://img.shields.io/badge/.NET-10.0-512BD4?logo=dotnet)](https://dotnet.microsoft.com/)
@@ -35,16 +34,10 @@ Implementacao simples do padrao Mediator para .NET, com suporte a DI via
 
 ## Instalacao
 
-Instale o pacote completo:
+Instale os contratos:
 
 ```bash
-dotnet add package Mediator
-```
-
-Ou apenas os contratos:
-
-```bash
-dotnet add package Mediator.Abstractions
+dotnet add package Jaber.Mediator.Abstractions
 ```
 
 ## Uso rapido
@@ -52,7 +45,7 @@ dotnet add package Mediator.Abstractions
 1) Defina um request e um handler:
 
 ```csharp
-using Mediator.Abstractions;
+using Jaber.Mediator.Abstractions;
 
 public sealed class CreateAccountRequest : IRequest<string>
 {
@@ -69,8 +62,8 @@ public sealed class CreateAccountHandler : IHandler<CreateAccountRequest, string
 2) Registre o mediator e os handlers:
 
 ```csharp
-using Mediator.Extensions;
-using Microsoft.Extensions.DependencyInjection;
+using Jaber.Mediator.Extensions;
+using Jaber.Microsoft.Extensions.DependencyInjection;
 
 var services = new ServiceCollection();
 services.AddMediator(typeof(Program).Assembly);
@@ -79,7 +72,7 @@ services.AddMediator(typeof(Program).Assembly);
 3) Envie o request:
 
 ```csharp
-using Mediator.Abstractions;
+using Jaber.Mediator.Abstractions;
 
 var provider = services.BuildServiceProvider();
 var mediator = provider.GetRequiredService<IMediator>();
@@ -107,7 +100,7 @@ services.AddMediator(
 ## Exemplo com Minimal API
 
 ```csharp
-using Mediator.Abstractions;
+using Jaber.Mediator.Abstractions;
 using MyMediator.Application;
 using MyMediator.Application.Accounts.UseCases.Create;
 
