@@ -6,7 +6,7 @@
         <Nullable>enable</Nullable>
         
         <PackageId>Jaber.Mediator.Abstractions</PackageId>
-        <Version>0.0.1</Version>
+        <Version>0.0.2</Version>
         <License>MIT</License>
         <Authors>Rafael Jáber</Authors>
         <Company>Jáber</Company>
