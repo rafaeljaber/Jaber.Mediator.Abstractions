@@ -12,8 +12,8 @@
         <Company>Jáber</Company>
         <PackageDescription>Abstractions for Mediator pattern implementation</PackageDescription>
         <Description>Abstractions for Mediator pattern implementation</Description>
-        <RepositoryUrl>https://github.com/rafaeljaber/Mediator</RepositoryUrl>
-        <PackageProjectUrl>https://github.com/rafaeljaber/Mediator</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/rafaeljaber/Jaber.Mediator.Abstractions</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/rafaeljaber/Jaber.Mediator.Abstractions</PackageProjectUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageTags>Mediator;Design Pattern;Dommain;DDD;</PackageTags>
         <Title>Mediator.Abstractions</Title>

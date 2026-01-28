@@ -1,8 +1,8 @@
 # Mediator
 
 [![NuGet Jaber.Mediator.Abstractions](https://img.shields.io/nuget/v/Mediator.Abstractions?label=Mediator.Abstractions&logo=nuget)](https://www.nuget.org/packages/Jaber.Mediator.Abstractions/)
-[![NuGet Downloads](https://img.shields.io/nuget/dt/Mediator?label=Downloads&logo=nuget)](https://www.nuget.org/packages/Mediator/)
-[![Last Commit](https://img.shields.io/github/last-commit/rafaeljaber/Mediator?label=last%20commit&logo=github)](https://github.com/rafaeljaber/Mediator)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/Mediator?label=Downloads&logo=nuget)](https://www.nuget.org/packages/Jaber.Mediator.Abstractions/)
+[![Last Commit](https://img.shields.io/github/last-commit/rafaeljaber/Mediator?label=last%20commit&logo=github)](https://github.com/rafaeljaber/Jaber.Mediator.Abstractions)
 [![.NET](https://img.shields.io/badge/.NET-10.0-512BD4?logo=dotnet)](https://dotnet.microsoft.com/)
 
 Implementacao simples do padrao Mediator para .NET, com suporte a DI via
