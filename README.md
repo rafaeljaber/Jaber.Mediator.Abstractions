@@ -1,19 +1,47 @@
 # Mediator
 
-Implementacao simples do padrao Mediator para .NET, com suporte a DI via `Microsoft.Extensions.DependencyInjection`.
+[![NuGet Mediator](https://img.shields.io/nuget/v/Mediator?label=Mediator&logo=nuget)](https://www.nuget.org/packages/Mediator/)
+[![NuGet Mediator.Abstractions](https://img.shields.io/nuget/v/Mediator.Abstractions?label=Mediator.Abstractions&logo=nuget)](https://www.nuget.org/packages/Mediator.Abstractions/)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/Mediator?label=Downloads&logo=nuget)](https://www.nuget.org/packages/Mediator/)
+[![Last Commit](https://img.shields.io/github/last-commit/rafaeljaber/Mediator?label=last%20commit&logo=github)](https://github.com/rafaeljaber/Mediator)
+[![.NET](https://img.shields.io/badge/.NET-10.0-512BD4?logo=dotnet)](https://dotnet.microsoft.com/)
+
+Implementacao simples do padrao Mediator para .NET, com suporte a DI via
+`Microsoft.Extensions.DependencyInjection`.
+
+## Indice
+
+- [Por que usar](#por-que-usar)
+- [Pacotes](#pacotes)
+- [Instalacao](#instalacao)
+- [Uso rapido](#uso-rapido)
+- [Registro via DI](#registro-via-di)
+- [Exemplo com Minimal API](#exemplo-com-minimal-api)
+- [Observacoes](#observacoes)
+- [Projetos de exemplo](#projetos-de-exemplo)
+
+## Por que usar
+
+- Fluxo simples para request/handler, sem dependencias extras.
+- Registro automatico de handlers via DI.
+- Separacao clara entre contratos e implementacao.
 
 ## Pacotes
 
-- `Mediator`: implementacao do mediator e extensoes de registro.
-- `Mediator.Abstractions`: contratos (`IMediator`, `IRequest<T>`, `IHandler<TRequest, TResponse>`).
+| Pacote | Descricao | Quando usar |
+| --- | --- | --- |
+| `Mediator` | Implementacao do mediator e extensoes de registro. | Quando voce precisa do runtime. |
+| `Mediator.Abstractions` | Contratos (`IMediator`, `IRequest<T>`, `IHandler<TRequest, TResponse>`). | Quando deseja somente as interfaces. |
 
 ## Instalacao
+
+Instale o pacote completo:
 
 ```bash
 dotnet add package Mediator
 ```
 
-Se voce quiser apenas os contratos:
+Ou apenas os contratos:
 
 ```bash
 dotnet add package Mediator.Abstractions
@@ -21,7 +49,7 @@ dotnet add package Mediator.Abstractions
 
 ## Uso rapido
 
-Defina um request e um handler:
+1) Defina um request e um handler:
 
 ```csharp
 using Mediator.Abstractions;
@@ -38,7 +66,7 @@ public sealed class CreateAccountHandler : IHandler<CreateAccountRequest, string
 }
 ```
 
-Registre o mediator e os handlers:
+2) Registre o mediator e os handlers:
 
 ```csharp
 using Mediator.Extensions;
@@ -48,7 +76,7 @@ var services = new ServiceCollection();
 services.AddMediator(typeof(Program).Assembly);
 ```
 
-Envie o request:
+3) Envie o request:
 
 ```csharp
 using Mediator.Abstractions;
@@ -64,8 +92,8 @@ Console.WriteLine(result);
 
 `AddMediator` faz:
 
-- registra `IMediator` como `Transient`.
-- escaneia as assemblies informadas e registra todo `IHandler<,>`.
+- Registra `IMediator` como `Transient`.
+- Escaneia as assemblies informadas e registra todo `IHandler<,>`.
 
 Se seus handlers estao em outros projetos, passe todas as assemblies necessarias:
 
@@ -101,7 +129,7 @@ app.Run();
 ## Observacoes
 
 - Target framework: `net10.0`.
-- Se nenhum handler for registrado para um request, o mediator lança `InvalidOperationException`.
+- Se nenhum handler for registrado para um request, o mediator lanca `InvalidOperationException`.
 
 ## Projetos de exemplo
 
