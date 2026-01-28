@@ -6,6 +6,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator.Samples", "Mediato
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator.Abstractions", "Mediator.Abstractions\Mediator.Abstractions.csproj", "{20940E55-B8C3-417A-979C-C124BC964664}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{2EC38647-A9A4-4888-91B0-77663BDE3A11}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clean Architecture", "Clean Architecture", "{69E56001-567E-440D-9F40-2A7996FDAA5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMediator.Domain", "MyMediator.Domain\MyMediator.Domain.csproj", "{93DC0669-9214-42C3-B32A-488C9512AF09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMediator.Application", "MyMediator.Application\MyMediator.Application.csproj", "{88352E82-7657-46F7-91C8-ED814B4676A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMediator.Api", "MyMediator.Api\MyMediator.Api.csproj", "{A482ABF9-060E-4F28-A482-1294D3CAEC35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMediator.Infrastructure", "MyMediator.Infrastructure\MyMediator.Infrastructure.csproj", "{A29F3DE1-8D8C-41BF-B781-7082F3EA2999}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +36,28 @@ Global
 		{20940E55-B8C3-417A-979C-C124BC964664}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20940E55-B8C3-417A-979C-C124BC964664}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20940E55-B8C3-417A-979C-C124BC964664}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93DC0669-9214-42C3-B32A-488C9512AF09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93DC0669-9214-42C3-B32A-488C9512AF09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93DC0669-9214-42C3-B32A-488C9512AF09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93DC0669-9214-42C3-B32A-488C9512AF09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88352E82-7657-46F7-91C8-ED814B4676A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88352E82-7657-46F7-91C8-ED814B4676A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88352E82-7657-46F7-91C8-ED814B4676A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88352E82-7657-46F7-91C8-ED814B4676A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A482ABF9-060E-4F28-A482-1294D3CAEC35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A482ABF9-060E-4F28-A482-1294D3CAEC35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A482ABF9-060E-4F28-A482-1294D3CAEC35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A482ABF9-060E-4F28-A482-1294D3CAEC35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A29F3DE1-8D8C-41BF-B781-7082F3EA2999}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A29F3DE1-8D8C-41BF-B781-7082F3EA2999}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A29F3DE1-8D8C-41BF-B781-7082F3EA2999}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A29F3DE1-8D8C-41BF-B781-7082F3EA2999}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BDE7F8B5-6374-4304-B23E-4A33D5B93F1E} = {2EC38647-A9A4-4888-91B0-77663BDE3A11}
+		{93DC0669-9214-42C3-B32A-488C9512AF09} = {69E56001-567E-440D-9F40-2A7996FDAA5A}
+		{88352E82-7657-46F7-91C8-ED814B4676A9} = {69E56001-567E-440D-9F40-2A7996FDAA5A}
+		{A482ABF9-060E-4F28-A482-1294D3CAEC35} = {69E56001-567E-440D-9F40-2A7996FDAA5A}
+		{A29F3DE1-8D8C-41BF-B781-7082F3EA2999} = {69E56001-567E-440D-9F40-2A7996FDAA5A}
 	EndGlobalSection
 EndGlobal

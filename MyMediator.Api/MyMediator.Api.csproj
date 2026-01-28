@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Mediator\Mediator.csproj" />
+      <ProjectReference Include="..\MyMediator.Application\MyMediator.Application.csproj" />
+      <ProjectReference Include="..\MyMediator.Domain\MyMediator.Domain.csproj" />
+      <ProjectReference Include="..\MyMediator.Infrastructure\MyMediator.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>
